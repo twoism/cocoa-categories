@@ -10,7 +10,7 @@
 
 @implementation UIImageView(ImageNamed) 
 - (id)initWithImageNamed:(NSString*)name{
-	UIImage *initImage = [[UIImage imageNamed:name] autorelease];
+	UIImage *initImage = [UIImage imageNamed:name];
 	return [self initWithImage:initImage];
 }
 @end
